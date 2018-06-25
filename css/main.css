@@ -111,23 +111,27 @@ menu {
 
 }
 .arrow{
-	position: absolute;
-	top: 50%;
+	position: relative;
+	top: 100%;
 	left: 50%;
-	width: 10vmin;
-	height: 5vmin;
+	width: 0;
+	height: 0;
 	transform: translate(-50%,-50%);
 }
 .arrow_bottom {
   position: absolute;
-	top: 50%;
-	width: 3vmin;
-	height: 3vmin;
-	background: transparent;
-	border-top: 1vmin solid white;
-	border-right: 1vmin solid white;
-	box-shadow: 0 0 0 lightgray;
+  margin-top: 10px;
+  width: 2.5vmin;
+  height: 2.5vmin;
+  background: transparent;
+  border-top: 0.3vmin solid white;
+  border-right: 0.3vmin solid white;
+  box-shadow: 0 0 0 lightgray;
   transition: all 200ms ease;
   right: 0;
-  transform: translate3d(0,-50%,0) rotate(45deg);
+  transform: translate3d(0,-50%,0) rotate(135deg);
+}
+.arrow_bottom:hover {
+  border-color: #5474fd;
+  box-shadow: 0.5vmin -0.5vmin 0 white;
 }
