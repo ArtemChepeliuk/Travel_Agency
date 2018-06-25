@@ -3,6 +3,16 @@ body {
   font-family: "Josefin Sans", sans-serif;
   margin: 0;
   padding: 0;
+  color: #ffffff !important;
+}
+
+a {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none !important;
 }
 
 header {
@@ -21,20 +31,18 @@ header {
 }
 
 .container h1 {
-  color: #fff;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 0px;
 }
 
 .container p {
-  color: #fff;
   text-align: center;
   margin-bottom: 50px;
 }
 
 .search {
-  max-width: 500px;
+  max-width: 650px;
   background-color: #fff;
   height: 60px;
   margin: auto;
@@ -80,58 +88,160 @@ header {
 
 .search-btn span {
   text-transform: uppercase;
-  color: #fff;
   font-size: 14px;
   font-family: "Montserrat Light";
   margin-right: 5px;
 }
 
 .search-btn i {
-  color: #fff;
   font-size: 13px;
 }
 
 .scroll-down {
   text-align: center;
-  padding-top: 120px; 
+  padding-top: 120px;
 }
 
 .scroll-down span {
-  color: #fff;
   font-family: "Josefin Sans";
   font-size: 14px;
   letter-spacing: 2.8px;
 }
 
-menu {
-  width: 100%;
-  height: 80px;
-  background-color: #5474fd;
-  display: flex;
+.arrow {
+  position: relative;
+  top: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  transform: translate(-50%, -50%);
+}
 
-}
-.arrow{
-	position: relative;
-	top: 100%;
-	left: 50%;
-	width: 0;
-	height: 0;
-	transform: translate(-50%,-50%);
-}
 .arrow_bottom {
   position: absolute;
   margin-top: 10px;
-  width: 2.5vmin;
-  height: 2.5vmin;
+  width: 2vmin;
+  height: 2vmin;
   background: transparent;
   border-top: 0.3vmin solid white;
   border-right: 0.3vmin solid white;
   box-shadow: 0 0 0 lightgray;
   transition: all 200ms ease;
   right: 0;
-  transform: translate3d(0,-50%,0) rotate(135deg);
+  transform: translate3d(0, -50%, 0) rotate(135deg);
 }
+
 .arrow_bottom:hover {
   border-color: #5474fd;
   box-shadow: 0.5vmin -0.5vmin 0 white;
+}
+
+menu {
+  max-width: 1770px;
+  height: 80px;
+  background-color: #5474fd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 330px 0 330px;
+}
+
+.menu_list ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row;
+  margin: 0;
+}
+
+.menu_list ul li {
+  display: flex;
+  flex-flow: row;
+  text-transform: uppercase;
+  font-family: "Optima LT Std";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.menu_list ul li:first-child {
+  margin-left: 0;
+}
+
+.menu_tittle__text {
+  margin: 0;
+  text-transform: uppercase;
+  font-family: "Josefin Sans";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 2.4px;
+}
+
+/* section one */
+
+.section_one {
+  background-image: url(../img/choose_bg.png);
+  background-repeat: no-repeat;
+  max-width: 1770px;
+  height: 620px;
+  margin: 0 auto;
+  background-position: center;
+  display: flex;
+  padding: 0 330px 0 330px;
+  justify-content: space-between;
+}
+
+.section_one__description {
+  margin-top: 200px;
+}
+
+.section_one__description--title {
+  font-family: "Optima LT Std";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.section_one__description--text {
+  color: #e8e8e8;
+  font-family: "Josefin Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 1.6px;
+  margin-top: 60px;
+  width: 530px;
+}
+
+.section_one__description--button {
+  width: 225px;
+  height: 60px;
+  display: flex;
+  background-color: #5474fd;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Optima LT Std";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-top: 50px;
+}
+
+.section_one__img{
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+}
+.first_img {
+
+  margin-right: 125px;
+}
+.second_img {
+  margin: 10px 0px 0px 125px;
 }
