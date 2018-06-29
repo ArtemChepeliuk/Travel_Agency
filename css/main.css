@@ -212,7 +212,7 @@ menu {
   font-weight: 400;
   line-height: 26px;
   letter-spacing: 1.6px;
-  margin-top: 60px;
+  margin: 60px 0 50px;
   width: 530px;
 }
 
@@ -230,18 +230,125 @@ menu {
   line-height: 26px;
   text-transform: uppercase;
   letter-spacing: 1.2px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  transition: transform .2s;
 }
 
-.section_one__img{
+.section_one__description--button:hover {
+  transform: scale(1.05);
+}
+
+.section_one__img {
   margin-top: 120px;
   display: flex;
   flex-direction: column;
 }
-.first_img {
 
+.first_img {
   margin-right: 125px;
 }
+
 .second_img {
   margin: 10px 0px 0px 125px;
+}
+
+.section_two {
+  height: 340px;
+  background-color: #333333;
+  max-width: 1770px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.section_two_howItWorks {
+  padding: 0 400px 0 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.middle_icon {
+  text-align: center;
+}
+
+.icon {
+  font-size: 72px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.blue {
+  color: #5474fd;
+}
+
+.red {
+  color: #ff6363;
+}
+
+.cyan {
+  color: #00a2ff;
+}
+
+.arcs_block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -52px;
+  padding: 0 30% 0;
+}
+
+.arcs {
+  display: inline-block;
+  width: 330px;
+  height: 100px;
+  border-radius: 50%;
+  border-top: 1px dotted white;
+}
+
+.section_three {
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 700px;
+  margin: 0;
+  background-position: center;
+  background-image: url(..//img/section_bg.png);
+  padding: 227px 0 0 328px;
+}
+
+.section_three-block {
+  width: 543px;
+  height: 374px;
+  background-color: #232323;
+  opacity: 0.9;
+  padding: 50px 30px;
+}
+
+.section_three-block_country-name {
+  margin-bottom: 30px;
+}
+
+.section_three-block_country-name span {
+  color: #e8e8e8;
+  font-family: "Josefin Sans";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 1.5px;
+}
+
+.section_three-block_city-name span{
+font-family: "Josefin Sans";
+font-size: 20px;
+font-weight: 400;
+line-height: 26px;
+text-transform: uppercase;
+}
+.section_three-block_description{
+  margin: 30px 0 46px;
+}
+
+.section_three-block_description span{
+font-family: "Josefin Sans";
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
 }
