@@ -131,7 +131,7 @@ header {
   transform: translate3d(0, -50%, 0) rotate(135deg);
 }
 
-.arrow_bottom:hover {
+#scrollDown:hover .arrow_bottom{
   border-color: #5474fd;
   box-shadow: 0.5vmin -0.5vmin 0 white;
 }
