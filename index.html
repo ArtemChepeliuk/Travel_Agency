@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="fonts/Icon-font-7-stroke-PIXEDEN-v-1.2.0/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
   <link rel="stylesheet" href="fonts/Icon-font-7-stroke-PIXEDEN-v-1.2.0/pe-icon-7-stroke/css/helper.css">
-
+  <link rel="icon" type="image/png" href="favicon.ico" />
 </head>
 
 <body>
@@ -26,7 +26,7 @@
         Safe Travel Anywhere
       </p>
       <div class="search">
-        <div class="row">
+        <div class="row row2">
           <div class="col-8 search-text">
             <input type="text" placeholder="Search Your Travel Destination">
           </div>
@@ -56,8 +56,12 @@
         Bhromaon
       </h1>
     </div>
-    <div class="menu_list">
-      <ul>
+    <div class="menu_list" id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+      <ul id="menu">
         <li>
           <a href="#">Who We Are</a>
         </li>
@@ -93,7 +97,7 @@
     </div>
     <div class="section_one__img">
       <div class="first_img">
-        <img src="img/choose_1.png" alt="picture1">
+        <img src="img/choose_1.png" alt="picture1" width="350" height="220">
       </div>
       <div class="second_img">
         <img src="img/choose_2.png" alt="picture2">
@@ -110,12 +114,24 @@
         </div>
         <div class="section_one__description--title">Search Places</div>
       </div>
+      <div class="section_two-arrow-right">
+        <i class="fas fa-arrow-right"></i>
+      </div>
+      <div class="section_two-arrow-down">
+          <i class="fas fa-arrow-down"></i>
+        </div>
       <div class="section_two-select">
         <div class="section_two-select__icon middle_icon">
           <i class="far fa-check-circle icon red"></i>
         </div>
         <div class="section_one__description--title">Select Places</div>
       </div>
+      <div class="section_two-arrow-right">
+        <i class="fas fa-arrow-right"></i>
+      </div>
+      <div class="section_two-arrow-down">
+          <i class="fas fa-arrow-down"></i>
+        </div>
       <div class="section_two-book">
         <div class="section_two-book__icon middle_icon">
           <i class="far fa-thumbs-up icon cyan"></i>
@@ -271,7 +287,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-    crossorigin="anonymous"></script> 
+    crossorigin="anonymous"></script>
   <script src="js/slider.js"></script>
 </body>
 
